@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0064)http://www.17sucai.com/preview/79761/2014-01-03/love/index.html# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><style type="text/css" id="17974622558"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Our Love Story</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="./Our Love Story_files/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./Our Love Story_files/jquery.js"></script>
+<script type="text/javascript" src="./Our Love Story_files/garden.js"></script>
+<script type="text/javascript" src="./Our Love Story_files/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content" style="width: 1110px; height: 625px; margin-top: 69.5px; margin-left: 165px;">
+		<div id="code" style="margin-top: 112.5px;">
+			<span class="comments">/**</span><br>
+			<span class="space"><span class="comments">*2015-06-14.</span><br>
+			<span class="space"><span class="comments">*/</span><br>
+			Boy name = <span class="keyword">Mr</span> WANG<br>
+			Girl name = <span class="keyword">Mrs</span> YAN<br>
+			<span class="comments">// Fall in love river. </span><br>
+			The boy love the girl;<br>
+			<span class="comments">// They love each other.</span><br>
+			The girl loved the boy;<br>
+			<span class="comments">// AS time goes on.</span><br>
+			The boy can not be separated the girl;<br>
+			<span class="comments">// At the same time.</span></span></span></span></div>
+		<div id="loveHeart">
+			<canvas id="garden" width="670" height="625"></canvas>
+			<div id="words" style="position: absolute; top: 264.5px; left: 675px;">
+				<div id="messages" style="display: none;">
+					亲爱的，这是我们相爱在一起的时光。
+					<div id="elapseClock"><span class="digit">422</span> days <span class="digit">17</span> hours <span class="digit">40</span> minutes <span class="digit">54</span> seconds</div>
+				</div>
+				<div id="loveu" style="display: none;">
+					七夕快乐,会一直爱你哦- -。<br>
+					<div class="signature">- 王庆</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015, 6, 14);
+together.setHours(20);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 3000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+
+<div style="position: static; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-top.png);"></div><div id="tip-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-top.png) repeat-x;"></div><div id="tip-right-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-top.png);"></div><div id="tip-right" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right.png) repeat-y;"></div><div id="tip-right-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-right-bottom.png);"></div><div id="tip-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-bottom.png) repeat-x;"></div><div id="tip-left-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left-bottom.png);"></div><div id="tip-left" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-left.png);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-bottom.png);"></div><div id="tip-arrow-top" style="background: url(chrome-extension://ikkepelhgbcgmhhmcmpfkjmchccjblkd/imgs/map/tip-arrow-top.png);"></div></div></body></html>
